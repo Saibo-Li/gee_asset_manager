@@ -108,6 +108,7 @@ def main(args=None):
                                                                                'or other special characters are not allowed.')
 
     required_named.add_argument('-u', '--user', help='Google account name (gmail address).')
+    required_named.add_argument('-p', '--project', help='Google project name.')
     optional_named.add_argument('-b', '--bucket', help='Google Cloud Storage bucket name.')
     optional_named.add_argument(
         '-e',
