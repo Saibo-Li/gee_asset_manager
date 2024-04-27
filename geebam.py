@@ -138,11 +138,11 @@ def main(args=None):
 
     args = parser.parse_args()
 
-    if args.service_account:
-        credentials = ee.ServiceAccountCredentials(args.service_account, args.private_key)
-        ee.Initialize(credentials)
-    else:
-        ee.Initialize()
+    # if args.service_account:
+    #     credentials = ee.ServiceAccountCredentials(args.service_account, args.private_key)
+    #     ee.Initialize(credentials)
+    # else:
+    #     ee.Initialize()
 
     if args.private_key is not None:
         os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = args.private_key
